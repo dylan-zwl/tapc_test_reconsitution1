@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:tag="Read block" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/test_item_bg" >
+
+        <GridView
+            android:id="@+id/test_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:fadeScrollbars="true"
+            android:gravity="center"
+            android:numColumns="5"
+            android:scrollbarFadeDuration="0"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="#10aeea"
+        android:fadeScrollbars="true"
+        android:orientation="vertical"
+        android:scrollbarFadeDuration="0"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#10aeea"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/menu_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="TAPC 测试软件"
+                    android:textColor="#fb0e1e"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/start_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_btn_h"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="开始/重新  测试"
+                    android:textColor="#fb0e1e"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/start_test_failed"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_btn_h"
+                    android:layout_marginTop="@dimen/main_btn_margin_t"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="测试  未成功的"
+                    android:textColor="#fb0e1e"
+                    android:textSize="25sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/mcu_bsl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_btn_h"
+                    android:layout_marginTop="@dimen/main_btn_margin_t"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="烧录MCU"
+                    android:textColor="#fb0e1e"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/system_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_btn_h"
+                    android:layout_marginTop="@dimen/main_btn_margin_t"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="系统设置"
+                    android:textColor="#fb0e1e"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/erp_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_btn_h"
+                    android:layout_marginTop="@dimen/main_btn_margin_t"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="待机测试"
+                    android:textColor="#fb0e1e"
+                    android:textSize="25sp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/test_va_copy"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_btn_h"
+                    android:layout_marginTop="@dimen/main_btn_margin_t"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="拷贝VA"
+                    android:textColor="#fb0e1e"
+                    android:textSize="25sp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/partitions"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_btn_h"
+                    android:layout_marginTop="@dimen/main_btn_margin_t"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="分区查看"
+                    android:textColor="#fb0e1e"
+                    android:textSize="25sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/menu_ll"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_btn_h"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/test_result_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="测试结果:"
+                        android:textColor="#fb0e1e"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_btn_h"
+                    android:layout_marginTop="@dimen/main_btn_margin_t"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/close"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="关闭软件"
+                        android:textColor="#fb0e1e"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/uninstall"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="卸载软件"
+                        android:textColor="#fb0e1e"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

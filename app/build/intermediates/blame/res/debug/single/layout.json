@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "E:\\project\\tapc_test_reconsitution1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\test_grid_item.xml",
+        "source": "E:\\project\\tapc_test_reconsitution1\\app\\src\\main\\res\\layout\\test_grid_item.xml"
+    },
+    {
+        "merged": "E:\\project\\tapc_test_reconsitution1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "E:\\project\\tapc_test_reconsitution1\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\project\\tapc_test_reconsitution1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tv.xml",
+        "source": "E:\\project\\tapc_test_reconsitution1\\app\\src\\main\\res\\layout\\activity_tv.xml"
+    },
+    {
+        "merged": "E:\\project\\tapc_test_reconsitution1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_touch.xml",
+        "source": "E:\\project\\tapc_test_reconsitution1\\app\\src\\main\\res\\layout\\activity_touch.xml"
+    },
+    {
+        "merged": "E:\\project\\tapc_test_reconsitution1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\test_progress.xml",
+        "source": "E:\\project\\tapc_test_reconsitution1\\app\\src\\main\\res\\layout\\test_progress.xml"
+    },
+    {
+        "merged": "E:\\project\\tapc_test_reconsitution1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menubar.xml",
+        "source": "E:\\project\\tapc_test_reconsitution1\\app\\src\\main\\res\\layout\\menubar.xml"
+    },
+    {
+        "merged": "E:\\project\\tapc_test_reconsitution1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_brightness.xml",
+        "source": "E:\\project\\tapc_test_reconsitution1\\app\\src\\main\\res\\layout\\activity_brightness.xml"
+    },
+    {
+        "merged": "E:\\project\\tapc_test_reconsitution1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\test_determine.xml",
+        "source": "E:\\project\\tapc_test_reconsitution1\\app\\src\\main\\res\\layout\\test_determine.xml"
+    },
+    {
+        "merged": "E:\\project\\tapc_test_reconsitution1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tft.xml",
+        "source": "E:\\project\\tapc_test_reconsitution1\\app\\src\\main\\res\\layout\\activity_tft.xml"
+    }
+]

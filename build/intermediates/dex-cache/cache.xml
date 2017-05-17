@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\project\tapc_test_reconsitution1\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4ab8678882571a0a6f19c47a826ecbce5b4f42b">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\com.jakewharton-butterknife-8.1.0_6296560a0131cc1cf5656d6564c72080a51e594f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\project\tapc_test_reconsitution1\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4ab8678882571a0a6f19c47a826ecbce5b4f42b">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\com.jakewharton-butterknife-8.1.0_6296560a0131cc1cf5656d6564c72080a51e594f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.1.0\d6854f42bfb4098d3d2358d93201307b9f1cc95d\butterknife-annotations-8.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6854f42bfb4098d3d2358d93201307b9f1cc95d">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\butterknife-annotations-8.1.0_aeb99314c09e0fb69e42caa74095952585e86ea3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\io.reactivex.rxjava2\rxjava\2.0.7\21734c0092a5d3c3ec99510e50c1ff76bdf0c65a\rxjava-2.0.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="21734c0092a5d3c3ec99510e50c1ff76bdf0c65a">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\rxjava-2.0.7_953b61087bf3b27f7954465f050bc5d818e73e2e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.reactivestreams\reactive-streams\1.0.0\14b8c877d98005ba3941c9257cfe09f6ed0e0d74\reactive-streams-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\reactive-streams-1.0.0_5ea215fafe26757b3eaa9e791da078c680959e41.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\project\tapc_test_reconsitution1\app\libs\d2xx.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="549d88cce99830dc2ae951a13d5a8b897362351b">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\d2xx_35ab217f6c0943a4a12e2ea1c553bc812d89d5dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\glide-3.7.0_1f3ddf859a86296da03fddcf50d19f29d652df81.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\glide-3.7.0_1f3ddf859a86296da03fddcf50d19f29d652df81.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.1.0\d6854f42bfb4098d3d2358d93201307b9f1cc95d\butterknife-annotations-8.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6854f42bfb4098d3d2358d93201307b9f1cc95d">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\butterknife-annotations-8.1.0_aeb99314c09e0fb69e42caa74095952585e86ea3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\project\tapc_test_reconsitution1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="46f1d5b388d28186f805e20715bf2747fd6eabdf">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_2f5d7dbc0674b45a4fe556393af78ce696c0d3da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_7cd194c6f3f4f301c835750b93d55cdb37d12acf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_7cd194c6f3f4f301c835750b93d55cdb37d12acf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\project\tapc_test_reconsitution1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="21e22b94429bd6cd7316695f7fc825ae1f209fac">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\instant-run_85456061bf811bded1c2de71c8b34b20d111e6c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\project\tapc_test_reconsitution1\app\build\intermediates\exploded-aar\io.reactivex.rxjava2\rxandroid\2.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4119ea97a7191ff9b8f33b534ea220448f62f491">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\io.reactivex.rxjava2-rxandroid-2.0.1_3c1a2fab5ac488708cf3be9890d3fad95a562999.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0_73b9883bfda7e9a6ae205d0e99c174e73ba72aaa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0_73b9883bfda7e9a6ae205d0e99c174e73ba72aaa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\project\tapc_test_reconsitution1\app\build\intermediates\exploded-aar\io.reactivex.rxjava2\rxandroid\2.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4119ea97a7191ff9b8f33b534ea220448f62f491">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\io.reactivex.rxjava2-rxandroid-2.0.1_3c1a2fab5ac488708cf3be9890d3fad95a562999.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.reactivestreams\reactive-streams\1.0.0\14b8c877d98005ba3941c9257cfe09f6ed0e0d74\reactive-streams-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\reactive-streams-1.0.0_5ea215fafe26757b3eaa9e791da078c680959e41.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\io.reactivex.rxjava2\rxjava\2.0.7\21734c0092a5d3c3ec99510e50c1ff76bdf0c65a\rxjava-2.0.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="21734c0092a5d3c3ec99510e50c1ff76bdf0c65a">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\rxjava-2.0.7_953b61087bf3b27f7954465f050bc5d818e73e2e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\project\tapc_test_reconsitution1\app\libs\d2xx.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="549d88cce99830dc2ae951a13d5a8b897362351b">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\d2xx_35ab217f6c0943a4a12e2ea1c553bc812d89d5dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\project\tapc_test_reconsitution1\app\libs\keyboard.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d990f21e4f07a84dc7a94356686656af63e3d449">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\keyboard_8b1fb0cbc7a7094647a3cad08adc77800120a5e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\project\tapc_test_reconsitution1\app\libs\keyboard.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d990f21e4f07a84dc7a94356686656af63e3d449">
+        <dex dex="E:\project\tapc_test_reconsitution1\app\build\intermediates\pre-dexed\debug\keyboard_8b1fb0cbc7a7094647a3cad08adc77800120a5e1.jar" />
+    </item>
+
+</items>
