@@ -503,7 +503,7 @@ public class MainActivity extends Activity {
     private boolean checkTestResult() {
         boolean result = true;
         for (ITest item : mListItem) {
-            if (item.getTestResult() == TestResult.FAIL) {
+            if (item.getTestResult() != TestResult.SUCCESS) {
                 result = false;
                 break;
             }
