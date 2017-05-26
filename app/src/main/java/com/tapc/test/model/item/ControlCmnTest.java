@@ -13,8 +13,6 @@ import com.tapc.android.controller.MachieStatusController;
 import com.tapc.android.controller.MachineController;
 import com.tapc.android.uart.Commands;
 import com.tapc.android.uart.ReceivePacket;
-import com.tapc.test.entity.BoardType;
-import com.tapc.test.entity.Config;
 import com.tapc.test.entity.RecvTestResult;
 import com.tapc.test.entity.TestItemType;
 import com.tapc.test.entity.TestResult;
@@ -42,14 +40,6 @@ public class ControlCmnTest extends BaseTest {
     }
 
     @Override
-    public void stop() {
-        super.stop();
-        if (mStatusReceiver != null) {
-            mStatusReceiver = null;
-        }
-    }
-
-    @Override
     public Commands getCommand() {
         return mTestCommand;
     }
@@ -74,17 +64,15 @@ public class ControlCmnTest extends BaseTest {
 //                mCtlType = 0x30;
 //            }
 
+            //需得下发命令到下控
             MachineController.getInstance().stopMachine(0);
             MachineController.getInstance().startMachine(100, 100);
 
             hasErrCode = false;
+            //开始测试，同时初始化波特率
             testControlCmn();
             int testCount = 0;
-            if (Config.BOARD_TYPE == BoardType.G022 || Config.BOARD_TYPE == BoardType.G012) {
-                testCount = 80;
-            } else {
-                testCount = 40;
-            }
+            testCount = 80;
             while (true) {
                 testCount = testCount - 1;
                 if (hasErrCode && isUTest) {
