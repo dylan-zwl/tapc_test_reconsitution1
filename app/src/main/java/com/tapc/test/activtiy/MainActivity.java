@@ -317,7 +317,7 @@ public class MainActivity extends Activity {
         addListItem(mSpeakerTest);
         addListItem(mEarphoneTest);
 
-        if (Config.BOARD_TYPE != BoardType.G012) {
+        if (Config.BOARD_TYPE != BoardType.G012 && Config.BOARD_TYPE != BoardType.G029) {
             addListItem(mAudioInTest);
         }
         addListItem(mKeyboardTest);
@@ -334,7 +334,7 @@ public class MainActivity extends Activity {
             }
             addListItem(mMp3InTest);
             addListItem(mWirelessHeartTest);
-            if (Config.BOARD_TYPE == BoardType.G028 || Config.BOARD_TYPE == BoardType.G029) {
+            if (Config.BOARD_TYPE == BoardType.G028) {
                 addListItem(mTvTest);
             }
         }
