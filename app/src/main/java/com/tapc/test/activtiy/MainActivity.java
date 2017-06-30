@@ -117,6 +117,13 @@ public class MainActivity extends Activity {
     private AutoTestProgressListener mAutoTestProgressListener;
 
     private String mBoardVersion = "";
+    private MachineType mMachineType = MachineType.TREADMILL;
+
+    private enum MachineType {
+        TREADMILL,//跑步机
+        BIKE,//健身车
+        WEIGHT_TRAINING//重训
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -283,6 +290,19 @@ public class MainActivity extends Activity {
             }
             mListItem.clear();
         }
+/**
+ *健身车：下控，安全锁 不检测
+ *重训： 下控取消错误码检测，安全锁，风扇，有线,无线心跳，按键口不检测
+ */
+        byte[] datas = MachineController.getInstance().getMachineVersionBytes();
+        if (datas != null && datas.length >= 2) {
+            byte machineTpye = datas[1];
+            if (machineTpye == 0x02) {
+                mMachineType = MachineType.BIKE;
+            } else if (machineTpye == 0x07) {
+                mMachineType = MachineType.WEIGHT_TRAINING;
+            }
+        }
 
         if (Config.IS_8935_PLATFORM) {
             if (Config.BOARD_TYPE == BoardType.G022 || Config.BOARD_TYPE == BoardType.G012) {
@@ -295,21 +315,33 @@ public class MainActivity extends Activity {
 
         addListItem(mUsbTest);
         addListItem(mMcuCmnTest);
-        addListItem(mFanTest);
-        addListItem(mSafekeyTest);
+        if (mMachineType != MachineType.WEIGHT_TRAINING) {
+            addListItem(mFanTest);
+        }
+        if (mMachineType == MachineType.TREADMILL) {
+            addListItem(mSafekeyTest);
+        }
         if (Config.BOARD_TYPE == BoardType.G028 || Config.BOARD_TYPE == BoardType.G029) {
             mSafekeyTest.setOrderTest(true);
         }
-        addListItem(mHeartTest);
-        //先启动一次有线测试，稳定测试。
-        mHeartTest.selectOpenHeartTest(TestItemType.HEART);
-        mHeartTest.setOrderTest(true);
+        if (mMachineType != MachineType.WEIGHT_TRAINING) {
+            addListItem(mHeartTest);
+            //先启动一次有线测试，稳定测试。
+            mHeartTest.selectOpenHeartTest(TestItemType.HEART);
+            mHeartTest.setOrderTest(true);
+        }
 
-        addListItem(mContrCmnTest);
+        if (mMachineType != MachineType.BIKE) {
+            addListItem(mContrCmnTest);
+            if (mMachineType == MachineType.WEIGHT_TRAINING) {
+                mContrCmnTest.setNotCheckErrorCode(true);
+            }
+        }
         if (Config.BOARD_TYPE == BoardType.G028 || Config.BOARD_TYPE == BoardType.G029) {
             //为不跟安全锁起冲突。
             mContrCmnTest.setOrderTest(true);
         }
+
         if (Config.BOARD_TYPE == BoardType.G022 || Config.BOARD_TYPE == BoardType.G012) {
             addListItem(mRfidTest);
         }
@@ -320,10 +352,14 @@ public class MainActivity extends Activity {
         if (Config.BOARD_TYPE != BoardType.G012 && Config.BOARD_TYPE != BoardType.G029) {
             addListItem(mAudioInTest);
         }
-        addListItem(mKeyboardTest);
-        if (Config.BOARD_TYPE == BoardType.G022 || Config.BOARD_TYPE == BoardType.G012) {
-            mKeyboardTest.setOrderTest(true);
+
+        if (mMachineType != MachineType.WEIGHT_TRAINING) {
+            addListItem(mKeyboardTest);
+            if (Config.BOARD_TYPE == BoardType.G022 || Config.BOARD_TYPE == BoardType.G012) {
+                mKeyboardTest.setOrderTest(true);
+            }
         }
+
         if (Config.IS_8935_PLATFORM) {
             if (Config.BOARD_TYPE == BoardType.G022 || Config.BOARD_TYPE == BoardType.G012) {
                 addListItem(mLedTest);
@@ -392,7 +428,6 @@ public class MainActivity extends Activity {
         String boardVersion = "\n主板: " + boardStr + " -V" + Config.VERSION;
 
         mBoardVersion = testVersion + boardVersion + osVersion;
-        mTitleText.setText(mBoardVersion + Config.MCU_VERSION);
 
         setMcuVersion();
     }

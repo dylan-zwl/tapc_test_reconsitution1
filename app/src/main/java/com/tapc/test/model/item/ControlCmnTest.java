@@ -27,6 +27,7 @@ public class ControlCmnTest extends BaseTest {
     private boolean isUTest;
     private byte mCtlType;
     private StatusReceiver mStatusReceiver;
+    boolean isNotCheckErrorCode = false;
 
     @Override
     public TestItemType getTestItemType() {
@@ -75,7 +76,7 @@ public class ControlCmnTest extends BaseTest {
             testCount = 80;
             while (true) {
                 testCount = testCount - 1;
-                if (hasErrCode && isUTest) {
+                if ((hasErrCode || isNotCheckErrorCode) && isUTest) {
                     finished(TestResult.SUCCESS);
                     break;
                 } else {
@@ -142,5 +143,9 @@ public class ControlCmnTest extends BaseTest {
                 Log.e("StatusReceiver", "isHasErrCode true");
             }
         }
+    }
+
+    public void setNotCheckErrorCode(boolean isCheck) {
+        isNotCheckErrorCode = isCheck;
     }
 }
