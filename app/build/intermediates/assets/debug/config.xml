@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <test_type>rk3188</test_type>
+    <mcu_version></mcu_version>
+    
+    <wifi_name>TP-LINtapc</wifi_name>
+    <wifi_password>1681681681</wifi_password>
+
+    <bt_name>U9508</bt_name>
+
+</resources>
